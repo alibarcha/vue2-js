@@ -3,7 +3,7 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-// ************filters *************
+// ************ Global filters *************
 Vue.filter("ucase",function(val){
   return val.toUpperCase()
 })
@@ -15,6 +15,7 @@ Vue.filter("currency",function(cur){
 Vue.filter('lower',function(lower){
   return lower.toLowerCase()
 })
+
 
 new Vue({
   render: h => h(App),
