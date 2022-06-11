@@ -1,20 +1,29 @@
 <template>
       <div id="app">
-        <h1>Fetch Data from API </h1>
-        <fetchApi/>
-        <FetchApp/>
+        <h1>Post data through Api </h1>
+        <!-- <fetchApi/> -->
+        <!-- <FetchApp/> -->
+        <PostData/>
+       
+       
     
        </div>
 </template>
 
 <script>
 
-import FetchApi from './components/FetchApi.vue'
-import FetchApp from './components/FetchApp.vue'
+// import FetchApi from './components/FetchApi.vue'
+// import FetchApp from './components/FetchApp.vue'
+
+import PostData from './components/PostData.vue'
+
+
 export default {
   components: {
-    FetchApi,
-    FetchApp
+    // FetchApi,
+    // FetchApp
+    PostData,
+
   
   },
   data (){
