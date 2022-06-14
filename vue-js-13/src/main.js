@@ -10,6 +10,7 @@ import Contact from './views/Contact'
 import  Login from './views/Login'
 import PageNotFound from './views/PageNotFound'
 
+
 Vue.use(VueRouter)
 
 const routes=[
@@ -22,6 +23,44 @@ const routes=[
 const router = new VueRouter({
   routes
 })
+
+
+// ************* custom directives *********************
+  // size directive
+Vue.directive('size',{
+  bind(el,binding){
+    if(binding.value=='small'){
+      
+      el.style.fontSize="20px"
+    }
+    else if(binding.value=='large'){
+      el.style.fontSize="40px"
+
+    }
+  }
+})
+
+// color directive
+Vue.directive('color',{
+  bind(el,binding){
+    if(binding.value=='red'){
+
+      el.style.color="red"
+    }
+    else if(binding.value=='light'){
+      el.style.color="lightgreen"
+
+    }
+  }
+})
+
+
+
+
+
+
+
+
 
 Vue.config.productionTip = false
 new Vue({
